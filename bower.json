@@ -1,0 +1,16 @@
+{
+  "name": "Babelians 2.0",
+  "version": "0.0.1",
+  "author": "Sergio Sánchez Sánchez",
+  "license": "MIT",
+  "dependencies": {
+    "prefixfree": "*",
+    "jquery": "jQuery#~2.1.4",
+    "animate.css": "animate-css#~3.4.0",
+    "font-awesome": "~4.4.0",
+    "bootstrap-social": "~4.10.1",
+    "scrollmagic": "ScrollMagic#~2.0.5",
+    "jquery.scrollTo": "~2.1.2",
+    "flickity": "~1.1.1"
+  }
+}
