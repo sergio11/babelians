@@ -47,6 +47,13 @@
 		.setTween(TweenMax.fromTo('#mobile_call',1.1,{right: '-70%'},{right:'50%'}))
 		.addTo(controller);
 
+		var scene = new ScrollMagic.Scene({
+		    triggerElement: '#section_parallax_3',
+		    offset: 0 /* offset the trigger 150px below #scene's top */
+		})
+		.setClassToggle("#seen-in-list", "fadeInDown")
+		.addTo(controller);
+
 		
 
 		/***************** Flickity ******************/

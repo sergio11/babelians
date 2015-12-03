@@ -127,7 +127,7 @@
     
     </section>
 
-    <section id='section_parallax_2' class="section section-bg">
+    <section id='section_parallax_2' class="section section-bg section-large">
       <div class="section-container flex-block flex-block-full flex-liquid-content">
         <div class="flex-block flex-block-y-full flex-direction-column">
           <h2 class="section-title">From anywhere with anyone</h2>
@@ -137,7 +137,7 @@
               <h3 class="feature-card-title transition">Instant Messenger</h3>
               <p class="feature-card-desc">Use our chat for talks anywhere, instantly</p>
               <div class="feature-card-actions transition">
-                <a href="#" class="btn btn-style-1">show more</a>
+                <a href="#" class="btn btn-style-1 md-trigger" data-modal="modal-1">show more</a>
               </div>
               <div id='chat' class="feature-card-circle transition"></div>
             </div>
@@ -194,28 +194,38 @@
         </div>
     </section>
 
-    <section id='section_parallax_3' class="section section-without-padding section-bg">
-      <div class="flex-block flex-block-y-full flex-direction-column">
-      
-            <h2 class="section-title">What they say about Babelians</h2>  
-            <div class="testimonials-slider">
-              <ul id="testimonials">
-                <li>
-                  <blockquote class="testimony"> 
-                    Gran página y gran profesional detrás de ella. Rapidez en el proyecto acompañado de altas cantidades de profesionalidad. Me ayudó a darle forma a mi idea y a ponerla en marcha. En poco tiempo le dio cuerpo cuidando mucho el detalle. Contento con el resultado. Muy recomendable
-                  </blockquote>
-                  <span style="color:white;">Jose M. Lopez · Subastatuarte.com</span>
-                </li>
-                <li>
-                  <blockquote class="testimony"> 
-                    Gran página y gran profesional detrás de ella. Rapidez en el proyecto acompañado de altas cantidades de profesionalidad. Me ayudó a darle forma a mi idea y a ponerla en marcha. En poco tiempo le dio cuerpo cuidando mucho el detalle. Contento con el resultado. Muy recomendable
-                  </blockquote>
-                  <span style="color:white;">Jose M. Lopez · Subastatuarte.com</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+    <section id='section_parallax_3' class="section section-bg section-small section-without-padding" >
+      <div class="flex-block flex-block-full">
+        <div class="seen-in flex-block flex-block-y-full flex-direction-column ">
+          <h2 class="section-title">Seen In</h2>
+          <ul class="seen-in-list list-inline animated" id="seen-in-list">
+            <li>
+              <a href="http://www.europapress.es/portaltic/socialmedia/noticia-babelians-red-social-aprender-idiomas-20141125161315.html" target="_blank">
+                <img src="dist/img/europaPress.png" width="120">
+              </a>
+            </li>
+          </ul>
+        </div>  
+        <div class="testimonials-slider">
+          <h3 class="text-center">What they say about Babelians</h3>
+          <ul id="testimonials">
+            <li>
+              <blockquote class="testimony"> 
+                Gran página y gran profesional detrás de ella. Rapidez en el proyecto acompañado de altas cantidades de profesionalidad. Me ayudó a darle forma a mi idea y a ponerla en marcha. En poco tiempo le dio cuerpo cuidando mucho el detalle. Contento con el resultado. Muy recomendable
+              </blockquote>
+              <span style="color:white;">Jose M. Lopez · Subastatuarte.com</span>
+            </li>
+            <li>
+              <blockquote class="testimony"> 
+                Gran página y gran profesional detrás de ella. Rapidez en el proyecto acompañado de altas cantidades de profesionalidad. Me ayudó a darle forma a mi idea y a ponerla en marcha. En poco tiempo le dio cuerpo cuidando mucho el detalle. Contento con el resultado. Muy recomendable
+              </blockquote>
+              <span style="color:white;">Jose M. Lopez · Subastatuarte.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
+
 
 	</main>
   <!-- Fin Main -->
@@ -252,8 +262,29 @@
   </footer>
   <!-- Fin Footer -->
 
+  <div class="md-modal md-effect-3" id="modal-1">
+    <div class="md-content">
+      <h3>Modal Dialog</h3>
+      <div>
+        <p>This is a modal window. You can do the following things with it:</p>
+        <ul>
+          <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+          <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+          <li><strong>Close:</strong> click on the button below to close the modal.</li>
+        </ul>
+        <button class="md-close btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- the overlay element -->
+  <div class="md-overlay"></div>
 
   <!-- Scripts -->
+  <script>
+    // this is important for IEs
+    var polyfilter_scriptpath = '/js/';
+  </script>
   <script type="text/javascript" src='https://code.jquery.com/jquery-1.11.3.min.js'></script>
   <script type="text/javascript" src='dist/vendor/scrollTo/jquery.scrollTo.min.js'></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
